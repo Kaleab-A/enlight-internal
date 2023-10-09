@@ -1,0 +1,10 @@
+bootstrap.js
+file.txt
+bootstrap.bundle.js
+bootstrap.bundle.js.map
+bootstrap.min.js
+bootstrap.bundle.min.js.map
+index.html
+bootstrap.min.js.map
+bootstrap.js.map
+bootstrap.bundle.min.js

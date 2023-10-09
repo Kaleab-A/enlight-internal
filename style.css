@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Poppins";
+    src: URL('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+body{
+    background-color: aqua;
+}
+
+#pageButtonDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.folder{
+    margin: 10px 20px;
+    width: 200px;
+    border-radius: 20px !important;
+    background-color: transparent !important;
+}
+
+.folder img{
+    width: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+}
+
+.card-text, .card-title{
+    text-align: center;
+}
+
+.navbar{
+    height: 10%;
+    background-color: white !important;
+    margin-bottom: 5%;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.navbar-brand{
+    height: 100px;
+    width: 100px;
+}
+
+#nav_logo{
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+#searchBar{
+    width: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+#searchDiv{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.hoverBtn:hover{
+    background-color: white !important;
+    border: #42A746 solid 1px !important;
+    color: #42A746 !important;
+}
+
+#titleDiv{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#titleDiv h1{
+    position: relative;
+    font-size: 6vw;
+    color: white;
+    -webkit-text-stroke: 0.3vw #f1f1f1;
+    font-family: Poppins;
+}
+
+#titleDiv h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: black;
+    -webkit-text-stroke: 0vw #383d52;
+    box-sizing:initial !important;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate
+{
+    0%, 10%, 100%{
+        width: 0%;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+
+/* Make the button make them look like a card, with 2 or 3 column  */
+
+/* .pageButton{
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.pageButton:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.pageButton:active{
+    background-color: #3e8e41;
+    color: white;
+} */
+
